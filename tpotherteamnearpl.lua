@@ -35,7 +35,7 @@ if closestPlayer then
 
   -- Важно! Проверяем, есть ли у нашего игрока персонаж и корневой объект
   if LocalPlayer.Character and LocalPlayer.Character.HumanoidRootPart then
-    LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(targetX, targetY, targetZ)
+    LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(targetX, targetY, targetZ +10)
 		print("Перемещен к ближайшему игроку")
   end
 end
